@@ -18,9 +18,18 @@
     <script src="https://code.jquery.com/qunit/qunit-1.18.0.js"></script>
 
     <script>
-      var person = function() {
-        // code here....
+    var person = function() {
+      return {
+         setName: function(name){
+           this.name = name;
+           return this;
+         },
+         setAge: function(age){
+           this.age = age;
+           return this;
+         }
       }
+    }
     </script>
     <script> // your tests go here
 
